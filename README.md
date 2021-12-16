@@ -4,7 +4,7 @@
 ## Introduction
 1. **Background**
 
-The Inertial Wheel Pendulum is a system that seeks to stabilize a pendulum in the upright position through the utilization of an inertia wheel. 
+The Inertia Wheel Pendulum is a system that seeks to stabilize a pendulum in the inverted upright position. This is to be acheived by calculated accelleration of an inertia wheel at the end of the pendulum arm. The system consists of a pendulum arm with one end fixed to a table top with the other arm-end is attached to a motor fixed to the inertia wheel. Integrated into the   
 
 ## Modeling
 ## Sensor Calibration
