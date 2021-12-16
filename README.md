@@ -6,6 +6,7 @@
 
 The Inertia Wheel Pendulum is a system that seeks to stabilize a pendulum in the inverted upright position. This is to be acheived by calculated accelleration of an inertia wheel at the end of the pendulum arm. The system consists of a pendulum arm with one end fixed to a table top with the other arm-end is attached to a motor fixed to the inertia wheel. An encoder is integrated with the fixed end of the arm to track is angle of rotation.
 
+
 The purpose of this project is to design, build and test a system that meets the desired functional requirements. The following report serves as documentation as to how the final solution wat acheived by the team. 
 
 2. **Resources**
@@ -13,6 +14,7 @@ The purpose of this project is to design, build and test a system that meets the
 Listed below are several key resources utilized by the team throughout the control system desing process (for full citation please see "References"):
    - *Control System Engineering*: 7th Edition; Norman S. Nice
    - *Engineering Science and Technology, an International Journal*: Nonlinear analysis and control of a reaction wheel pendulum: Lyapunov-based approach; Oscar Montoya & Walter Gonzales
+   - *Object Heirarchy Relations - CopelliaSim*: Leopoldo Arnesto
 
 
 
