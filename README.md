@@ -17,7 +17,7 @@ The inertia wheel pendulum is a system that seeks to stabilize a pendulum in the
 The given operational viepoint serves to give the reader a very top-level vizualization of the physical system. However, it is unclear as to how this system will acheive the desired functionality. In response, a logical/functional viewpoint was created to serve as a reference for how components within the system interact with onanother. Seen below in Figure 2 is the logical/functional viepoint for the inertia wheel pendulum.
 
 <p align="center">
-<img width="600" alt="logicalViewpoint" src="https://user-images.githubusercontent.com/90480302/146479834-3edfd602-7af7-4eee-b9b2-dcb6e1c0be35.PNG">
+  <img width="600" alt="logicalViewpoint" src="https://user-images.githubusercontent.com/90480302/146479834-3edfd602-7af7-4eee-b9b2-dcb6e1c0be35.PNG">
 </p>
 
 <p align="center">  
@@ -40,7 +40,17 @@ Listed below are several key resources utilized by the team throughout the contr
 ## Modeling
 **1. Free Body Diagram**
 
-In order to derive the mathematical model for the inertia wheel pendulum, a FBD must first be constructed to define reference axes 
+In order to derive the mathematical model for the inertia wheel pendulum, a FBD must first be constructed to define reference axes and system variables. Figure 3 below depicts the free body diagram used to define stem variables. 
+
+<p align="center">
+  <img width="354" alt="FBD" src="https://user-images.githubusercontent.com/90480302/146482480-46cb4d4e-19c1-4d3a-a63b-4c0769653998.PNG"> 
+</p>
+
+<p align="center">  
+  Figure 3: FBD used to define analysis of the inertia wheel pendulum
+</p>
+
+The following table depicts definitions of the symbols present in the free body diagram seen above.
 ## Sensor Calibration
 ## Controller Design Simulation
 ## Controller Implementation
