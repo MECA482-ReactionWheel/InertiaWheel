@@ -11,7 +11,7 @@ The inertia wheel pendulum is a system that seeks to stabilize a pendulum in the
 </p>
 
 <p align="center">  
-  Figure 1: Operational viewpoint for the inertia wheel pendulum.
+  <b>Figure 1</b>: Operational viewpoint for the inertia wheel pendulum.
 </p>
 
 The given operational viepoint serves to give the reader a very top-level vizualization of the physical system. However, it is unclear as to how this system will acheive the desired functionality. In response, a logical/functional viewpoint was created to serve as a reference for how components within the system interact with onanother. Seen below in Figure 2 is the logical/functional viepoint for the inertia wheel pendulum.
@@ -21,7 +21,7 @@ The given operational viepoint serves to give the reader a very top-level vizual
 </p>
 
 <p align="center">  
-  Figure 2: Logical/functional viewpoint for the inertia wheel pendulum.
+  <b>Figure 2</b>: Logical/functional viewpoint for the inertia wheel pendulum.
 </p>
 
 When couple with Figure 1, the logical/functional viewpoint serves to provide a complete top-level unserstanding of system functionality.
@@ -43,14 +43,24 @@ Listed below are several key resources utilized by the team throughout the contr
 In order to derive the mathematical model for the inertia wheel pendulum, a FBD must first be constructed to define reference axes and system variables. Figure 3 below depicts the free body diagram used to define stem variables. 
 
 <p align="center">
-  <img width="354" alt="FBD" src="https://user-images.githubusercontent.com/90480302/146482480-46cb4d4e-19c1-4d3a-a63b-4c0769653998.PNG"> 
+  <img width="500" alt="FBD" src="https://user-images.githubusercontent.com/90480302/146482480-46cb4d4e-19c1-4d3a-a63b-4c0769653998.PNG"> 
 </p>
 
 <p align="center">  
-  Figure 3: FBD used to define analysis of the inertia wheel pendulum
+  <b>Figure 3</b>: FBD used to define analysis of the inertia wheel pendulum.
 </p>
 
-The following table depicts definitions of the symbols present in the free body diagram seen above.
+The following table depicts definitions of the system parameters used to derive the mathematical model. 
+
+<p align="center">
+  <b>Table 1</b>: Parameter definitions relevant to preparing the mathematical model for the inertia wheel pendulum.
+</p>
+
+<p align="center">
+  <img width="500" alt="parameterValues" src="https://user-images.githubusercontent.com/90480302/146488151-d394b5c8-8b78-4336-be7a-3dc923fa0ba7.PNG">
+</p>
+
+
 ## Sensor Calibration
 ## Controller Design Simulation
 ## Controller Implementation
