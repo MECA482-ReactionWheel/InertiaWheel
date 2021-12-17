@@ -74,8 +74,10 @@ In Eq.(1), the zero on the right hand side indicates that no external torque is 
 From here, the next step is to define the Lagrangian term depicted in the two equations above. The three equations below are general equations for: Lagrange, kinetic, and potential energies of a system.
 
 <p align="center">
-  <img width="600" alt="eulerLagrange" src="https://user-images.githubusercontent.com/90480302/146493561-10e9f0d4-612e-42b9-aa01-c809d1890a51.PNG">
+  <img width="600" alt="kineticPotential" src="https://user-images.githubusercontent.com/90480302/146494552-59c75951-86fb-45f1-89b7-4e05d3d46140.PNG">
 </p>
+
+The pendulum arm is a body with a mass distributed along its length, its kinetic energy is computed by adding the kinetic energy of a particle of mass <i>m</i><sub>1</sub>, which translates on a circumference with radius <i>l</i><sub>c</sub> and the kinetic energy of a stick that rotates around its center of mass. Kinetic energy can be taken into account that the wheel’s angular velocity, as measured by an observer fixed to the  table, is 𝝷1+ 𝝷1.
 
 
 ## Sensor Calibration
