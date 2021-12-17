@@ -14,7 +14,7 @@ The inertia wheel pendulum is a system that seeks to stabilize a pendulum in the
   Figure 1: Functional viewpoint for the inertia wheel pendulum.
 </p>
 
-The purpose of this project is to design, build and test a system that meets the desired functional requirements. The following report serves as documentation as to how the final solution wat acheived by the team. 
+The given functional viepoint serves to give the reader a very top-level vizualization of the system. However, it is unclear as to how this system will acheive the desired functionality. In response, a logical functional viewpoint was created to serve as a reference for how components within the system physically interact with onae The purpose of this project is to design, build and test a system that meets the desired functional requirements. The following report serves as documentation as to how the final solution wat acheived by the team. 
 
 **2. Resources**
 
