@@ -60,8 +60,7 @@ The following table depicts definitions based on the above schematic for system 
   <img width="500" alt="parameterValues" src="https://user-images.githubusercontent.com/90480302/146488151-d394b5c8-8b78-4336-be7a-3dc923fa0ba7.PNG">
 </p>
 
-**2. 
-**1. Equation of Motion
+**2. Equation of Motion**
 
 For mechanical systems, a classical method to derive the equations of motion is the Euler-Lagrange approach. As is well known, this approach requires the computation of kinetic and potential energies and the subsequent knowledge of the forces acting on the system. The equations shown below represent the Euler-Lagrange equation with both interacting bodies.
 
@@ -69,7 +68,7 @@ For mechanical systems, a classical method to derive the equations of motion is 
   <img width="600" alt="eulerLagrange" src="https://user-images.githubusercontent.com/90480302/146493561-10e9f0d4-612e-42b9-aa01-c809d1890a51.PNG">
 </p>
 
-In Eq.(1), the zero on the right hand side indicates that no external torque is being applied to the pendulum. The zero on the on Eq.(1) , indicates that no external torque is applied at the point where the pendulum hangs up since no potential force is being applied to the pendulum.
+In Eq.(1), the zero on the right hand side indicates that no external torque is being applied to the pendulum at this point. The zero on the on Eq.(1) , indicates that no external torque is applied at the point where the pendulum hangs up since no potential force is being applied to the pendulum.
 
 From here, the next step is to define the Lagrangian term depicted in the two equations above. The three equations below are general equations for: Lagrange, kinetic, and potential energies of a system.
 
@@ -77,7 +76,24 @@ From here, the next step is to define the Lagrangian term depicted in the two eq
   <img width="600" alt="kineticPotential" src="https://user-images.githubusercontent.com/90480302/146494552-59c75951-86fb-45f1-89b7-4e05d3d46140.PNG">
 </p>
 
-The pendulum arm is a body with a mass distributed along its length, its kinetic energy is computed by adding the kinetic energy of a particle of mass <i>m</i><sub>1</sub>, which translates on a circumference with radius <i>l</i><sub>c</sub> and the kinetic energy of a stick that rotates around its center of mass. Kinetic energy can be taken into account that the wheel’s angular velocity, as measured by an observer fixed to the  table, is 𝝷1+ 𝝷1.
+The pendulum arm is a body with a mass distributed along its length. Its total kinetic energy is the summation of the kinetic energy of a particle of mass <i>m</i><sub>1</sub> translating a circumference of radius <i>l</i><sub>c</sub>, along with the kinetic energy of a bar that rotates around its center of mass. Kinetic energy can be taken into account that the wheel’s angular velocity, as measured by an observer fixed to the table, is <i>θ</i><sub>1</sub>+<i>θ</i><sub>2</sub>. The equations below define the system's total kinetic energy. 
+
+<p align="center">
+  <img width="600" alt="kineticEnergy" src="https://user-images.githubusercontent.com/90480302/146495700-238bc7b4-f702-4cc7-8740-fa5d7b16501e.PNG">
+</p>
+
+The final step in obtaining the system's Lagrangian equation is to define its potential energies. It has been assumed that when the angular position is 0 degrees (normal equlibrium state) the system's potential energy is 0 as well. The equations below define the potential energies within the system. 
+
+<p align="center">
+  <img width="600" alt="potentialEnergy" src="https://user-images.githubusercontent.com/90480302/146496570-8c30608a-f26e-4e05-a5a3-815b5d034045.PNG">
+</p>
+
+Finally, combining Eqs.(6, 7, 8, 9) into Eq.(4) yields the final Lagrange equation for the system shown in Eq.(10) below.
+
+<p align="center">
+  <img width="600" alt="lagrange" src="https://user-images.githubusercontent.com/90480302/146497214-0d58b9a8-3a4b-48f3-8085-92b82770f95f.PNG">
+</p>
+
 
 
 ## Sensor Calibration
