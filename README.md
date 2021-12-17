@@ -32,10 +32,9 @@ The following report consists of documentation pertaining to the solution obtain
 
 Listed below are several key resources utilized by the team throughout the control system desing process (for full citation please see "References"):
    - *Control System Engineering*: 7th Edition; Norman S. Nice
-   - *Engineering Science and Technology, an International Journal*: Nonlinear analysis and control of a reaction wheel pendulum: Lyapunov-based approach; Oscar Montoya & Walter Gonzales
+   - *Automatic Control with Experiments*: Victor Manuel Hernández-Guzmán & Ramón Silva-Ortigoza
+   - *Nonlinear analysis and control of a reaction wheel pendulum - Lyapunov-based approach*: Oscar Montoya & Walter Gonzales
    - *Object Heirarchy Relations - CopelliaSim*: Leopoldo Arnesto
-
-
 
 ## Modeling
 **1. Schematic**
@@ -94,6 +93,7 @@ Finally, combining Eqs.(6, 7, 8, 9) into Eq.(4) yields the final Lagrange equati
   <img width="600" alt="lagrange" src="https://user-images.githubusercontent.com/90480302/146497214-0d58b9a8-3a4b-48f3-8085-92b82770f95f.PNG">
 </p>
 
+**3. State Space Representation**
 
 
 ## Sensor Calibration
