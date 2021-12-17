@@ -135,8 +135,15 @@ The final step in aquiring the complete state equation is to define the output e
 A step-by-step documentation of the methodology surrounding the acquisition of the inertia wheel pendulum's state space equation can be found [here](https://github.com/MECA482-ReactionWheel/InertiaWheel/blob/main/images/482%20wheel%20clacs.pdf).
 
 ## Sensor Calibration
-## Controller Design Simulation
-## Controller Implementation
+
+No sensor calibration was necessary for implementation.
+
+## Controller Design & Simulation
+
+**Controller design documentation here**
+
+**Simulation documentation here**
+
 ## Appendix A: Simulation Code
 ## References
 
