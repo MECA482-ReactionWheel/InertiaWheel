@@ -95,7 +95,7 @@ Finally, combining Eqs.(6, 7, 8, 9) into Eq.(4) yields the final Lagrange equati
 
 **3. State Space Representation**
 
-
+A full run-through of the methodology behind the acquisition of the system's state equation can be seen [here](https://github.com/MECA482-ReactionWheel/InertiaWheel/blob/main/images/482%20wheel%20clacs.pdf).
 ## Sensor Calibration
 ## Controller Design Simulation
 ## Controller Implementation
