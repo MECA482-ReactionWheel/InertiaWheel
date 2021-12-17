@@ -4,7 +4,7 @@
 ## Introduction
 **1. Background**
 
-The inertia wheel pendulum is a system that seeks to stabilize a pendulum in the inverted upright position. This is to be acheived by calculated accelleration of an inertia wheel at the end of the pendulum arm. In order to achieve the desired functionality, one end of the pendulum arm is attached to a rotating base that is fixed to a table-end. An encoder serves as the rotating base in order to track the pendulum arm's angle of rotation. Figure 1 below captures the operational viewpoint for the system described above.
+The inertia wheel pendulum is a system that seeks to stabilize a pendulum in the inverted upright position. This is to be acheived by calculated accelleration of an inertia wheel at the end of the pendulum arm. In order to achieve the desired functionality, one end of the pendulum arm is attached to a rotating base that is fixed to a table-end. Incorporated into the system are two encoders, one serves as the rotating base in order to track the pendulum arm's angle of rotation while the other monitors wheel speed/position. Figure 1 below captures the operational viewpoint for the system described above.
 
 <p align="center">
 <img width="550" alt="operationalViewpoint" src="https://user-images.githubusercontent.com/90480302/146479783-8992f72c-04e3-4042-ac6e-c24deac53aea.PNG">
@@ -38,19 +38,19 @@ Listed below are several key resources utilized by the team throughout the contr
 
 
 ## Modeling
-**1. Free Body Diagram**
+**1. Schematic**
 
-In order to derive the mathematical model for the inertia wheel pendulum, a FBD must first be constructed to define reference axes and system variables. Figure 3 below depicts the free body diagram used to define stem variables. 
+In order to derive the mathematical model for the inertia wheel pendulum, a schematic must first be constructed to define reference axes and system variables. Figure 3 below depicts the system schematic used to define relevant variables. 
 
 <p align="center">
   <img width="500" alt="FBD" src="https://user-images.githubusercontent.com/90480302/146482480-46cb4d4e-19c1-4d3a-a63b-4c0769653998.PNG"> 
 </p>
 
 <p align="center">  
-  <b>Figure 3</b>: FBD used to define analysis of the inertia wheel pendulum.
+  <b>Figure 3</b>: Symbolic schematic of the inertia wheel pendulum.
 </p>
 
-The following table depicts definitions of the system parameters used to derive the mathematical model. 
+The following table depicts definitions based on the above schematic for system parameters used in the derivation of the mathematical model. 
 
 <p align="center">
   <b>Table 1</b>: Parameter definitions relevant to preparing the mathematical model for the inertia wheel pendulum.
@@ -60,6 +60,16 @@ The following table depicts definitions of the system parameters used to derive 
   <img width="500" alt="parameterValues" src="https://user-images.githubusercontent.com/90480302/146488151-d394b5c8-8b78-4336-be7a-3dc923fa0ba7.PNG">
 </p>
 
+**2. 
+**1. Equation of Motion
+
+For mechanical systems, a classical method to derive the equations of motion is the Euler-Lagrange approach. As is well known, this approach requires the computation of kinetic and potential energies and the subsequent knowledge of the forces acting on the system. The equations shown below represent the Euler-Lagrange equation with both interacting bodies.
+
+<p align="center">
+  <img width="469" alt="eulerLagrange" src="https://user-images.githubusercontent.com/90480302/146493561-10e9f0d4-612e-42b9-aa01-c809d1890a51.PNG">
+</p>
+
+In Eq.(1), the zero on the right hand side indicates that no external torque is being applied to the pendulum. The zero on the on Eq.(1) , indicates that no external torque is applied at the point where the pendulum hangs up since no potential force is being applied to the pendulum.The general  equation Lagrangian with both potential and kinetic parameters can be given as
 
 ## Sensor Calibration
 ## Controller Design Simulation
