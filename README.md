@@ -35,6 +35,7 @@ Listed below are several key resources utilized by the team throughout the contr
    - *Automatic Control with Experiments*: Victor Manuel Hernández-Guzmán & Ramón Silva-Ortigoza
    - *Nonlinear analysis and control of a reaction wheel pendulum - Lyapunov-based approach*: Oscar Montoya & Walter Gonzales
    - *Object Heirarchy Relations - CopelliaSim*: Leopoldo Arnesto
+   - CopelliaSim Forum: *Shared Memory Plugin For VREP /Matlab Communication*
 
 ## Modeling
 **1. Schematic**
@@ -94,6 +95,12 @@ Finally, combining Eqs.(6, 7, 8, 9) into Eq.(4) yields the final Lagrange equati
 </p>
 
 **3. State Space Representation**
+
+With the equation of motion derived for the system, the final step in acquiring the mathematical model is to represent the system in state space. Seen below are the general equations for state space representation. 
+
+<p align="center">
+  <img width="600" alt="stateGen" src="https://user-images.githubusercontent.com/90480302/146600660-08907465-6ca7-43f5-b743-7b32ef30c958.PNG">
+</p>
 
 A full run-through of the methodology behind the acquisition of the system's state equation can be seen [here](https://github.com/MECA482-ReactionWheel/InertiaWheel/blob/main/images/482%20wheel%20clacs.pdf).
 ## Sensor Calibration
