@@ -66,10 +66,17 @@ The following table depicts definitions based on the above schematic for system 
 For mechanical systems, a classical method to derive the equations of motion is the Euler-Lagrange approach. As is well known, this approach requires the computation of kinetic and potential energies and the subsequent knowledge of the forces acting on the system. The equations shown below represent the Euler-Lagrange equation with both interacting bodies.
 
 <p align="center">
-  <img width="469" alt="eulerLagrange" src="https://user-images.githubusercontent.com/90480302/146493561-10e9f0d4-612e-42b9-aa01-c809d1890a51.PNG">
+  <img width="600" alt="eulerLagrange" src="https://user-images.githubusercontent.com/90480302/146493561-10e9f0d4-612e-42b9-aa01-c809d1890a51.PNG">
 </p>
 
-In Eq.(1), the zero on the right hand side indicates that no external torque is being applied to the pendulum. The zero on the on Eq.(1) , indicates that no external torque is applied at the point where the pendulum hangs up since no potential force is being applied to the pendulum.The general  equation Lagrangian with both potential and kinetic parameters can be given as
+In Eq.(1), the zero on the right hand side indicates that no external torque is being applied to the pendulum. The zero on the on Eq.(1) , indicates that no external torque is applied at the point where the pendulum hangs up since no potential force is being applied to the pendulum.
+
+From here, the next step is to define the Lagrangian term depicted in the two equations above. The three equations below are general equations for: Lagrange, kinetic, and potential energies of a system.
+
+<p align="center">
+  <img width="600" alt="eulerLagrange" src="https://user-images.githubusercontent.com/90480302/146493561-10e9f0d4-612e-42b9-aa01-c809d1890a51.PNG">
+</p>
+
 
 ## Sensor Calibration
 ## Controller Design Simulation
