@@ -68,9 +68,9 @@ For mechanical systems, a classical method to derive the equations of motion is 
   <img width="600" alt="eulerLagrange" src="https://user-images.githubusercontent.com/90480302/146493561-10e9f0d4-612e-42b9-aa01-c809d1890a51.PNG">
 </p>
 
-In Eq.(1), the zero on the right hand side indicates that no external torque is being applied to the pendulum at this point. The zero on the on Eq.(1) , indicates that no external torque is applied at the point where the pendulum hangs up since no potential force is being applied to the pendulum.
+In Eq.(1), the zero on the right hand side indicates that no external torque is being applied to the pendulum at this point.
 
-From here, the next step is to define the Lagrangian term depicted in the two equations above. The three equations below are general equations for: Lagrange, kinetic, and potential energies of a system.
+The first step is to define the Lagrangian. The three equations below are general equations for: Lagrangian, kinetic, and potential energies of a system.
 
 <p align="center">
   <img width="600" alt="kineticPotential" src="https://user-images.githubusercontent.com/90480302/146494552-59c75951-86fb-45f1-89b7-4e05d3d46140.PNG">
@@ -82,13 +82,13 @@ The pendulum arm is a body with a mass distributed along its length. Its total k
   <img width="600" alt="kineticEnergy" src="https://user-images.githubusercontent.com/90480302/146495700-238bc7b4-f702-4cc7-8740-fa5d7b16501e.PNG">
 </p>
 
-The final step in obtaining the system's Lagrangian equation is to define its potential energies. It has been assumed that when the angular position is 0 degrees (normal equlibrium state) the system's potential energy is 0 as well. The equations below define the potential energies within the system. 
+The final step in obtaining the system's Lagrangian equation is to define its potential energies. It has been assumed that when the angular position of the pendulum arm is 0 degrees (normal equlibrium state) the system's potential energy is 0 as well. The equations below define the potential energies within the system. 
 
 <p align="center">
   <img width="600" alt="potentialEnergy" src="https://user-images.githubusercontent.com/90480302/146496570-8c30608a-f26e-4e05-a5a3-815b5d034045.PNG">
 </p>
 
-Finally, combining Eqs.(6, 7, 8, 9) into Eq.(4) yields the final Lagrange equation for the system shown in Eq.(10) below.
+Finally, combining Eqs.(6, 7, 8, 9) into Eq.(4) yields the final definition of the Lagrange equation for the system shown in Eq.(10) below.
 
 <p align="center">
   <img width="600" alt="lagrange" src="https://user-images.githubusercontent.com/90480302/146497214-0d58b9a8-3a4b-48f3-8085-92b82770f95f.PNG">
@@ -108,7 +108,7 @@ To represent the system in state space the phase variables must first be defined
   <img width="600" alt="stateVars" src="https://user-images.githubusercontent.com/90480302/146602241-f28d12bd-717a-456b-af88-7e6216e04a3e.PNG">
 </p>
 
-With the state variables defined, 
+In the four equations above, the relationship *x*=*θ* is applied. With the state variables defined, 
 
 A full run-through of the methodology behind the acquisition of the system's state equation can be seen [here](https://github.com/MECA482-ReactionWheel/InertiaWheel/blob/main/images/482%20wheel%20clacs.pdf).
 ## Sensor Calibration
