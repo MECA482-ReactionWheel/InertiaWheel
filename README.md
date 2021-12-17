@@ -102,6 +102,14 @@ With the equation of motion derived for the system, the final step in acquiring 
   <img width="600" alt="stateGen" src="https://user-images.githubusercontent.com/90480302/146600660-08907465-6ca7-43f5-b743-7b32ef30c958.PNG">
 </p>
 
+To represent the system in state space the phase variables must first be defined. Eq.(13, 14) below show the system-particular state variable definitions. 
+
+<p align="center">
+  <img width="600" alt="stateVars" src="https://user-images.githubusercontent.com/90480302/146602241-f28d12bd-717a-456b-af88-7e6216e04a3e.PNG">
+</p>
+
+With the state variables defined, 
+
 A full run-through of the methodology behind the acquisition of the system's state equation can be seen [here](https://github.com/MECA482-ReactionWheel/InertiaWheel/blob/main/images/482%20wheel%20clacs.pdf).
 ## Sensor Calibration
 ## Controller Design Simulation
