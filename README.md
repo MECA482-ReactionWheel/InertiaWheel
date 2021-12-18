@@ -306,7 +306,7 @@ w = 30;
 
 **Other simulation files can be found [here](https://github.com/MECA482-ReactionWheel/InertiaWheel/blob/main/Inertia%20Wheel.zip).**
 
-## Appendix B: Project Documents
+## Appendix B: Project Documents/Video
 
 - [**Presentation Slides**](https://github.com/MECA482-ReactionWheel/InertiaWheel/blob/main/presentationSlides.pdf)
 - [**Presentation Video**](https://github.com/MECA482-ReactionWheel/InertiaWheel/blob/main/images/482presentaion%20.mp4)
