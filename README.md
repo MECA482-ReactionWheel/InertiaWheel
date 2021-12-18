@@ -140,7 +140,7 @@ No sensor calibration was necessary for implementation.
 
 ## Controller Design & Simulation
 
-In order to implement the equation of motion into CopelliaSIM, a controller architechture must be devised. The motor must act according to feedback from the encoder that tracks the degree of rotation of the pendulum arm.  
+In order to implement the equation of motion into CopelliaSIM and acheive the desired function, an appropriate controller architechture must be devised. To balance the system in the inverted upright position, the motor must act according to feedback from the encoder that tracks the degree of rotation of the pendulum arm.  
 
 The first controller used for simulation was a full-state feedback controller seen below in Figure 4.
 
@@ -193,10 +193,6 @@ The inertia wheel pendulum was also modeled in CopelliaSIM. This model can be se
 </p>
 
 A video of the actual simulation can be seen [here](https://github.com/MECA482-ReactionWheel/InertiaWheel/blob/main/images/Meeting%20Controls%20-%2017%20December%202021%20(1).mp4).
-
-**Controller design documentation here**
-
-**Simulation documentation here**
 
 ## Appendix A: Simulation Code
 ## References
