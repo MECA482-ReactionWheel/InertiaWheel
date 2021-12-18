@@ -140,6 +140,8 @@ No sensor calibration was necessary for implementation.
 
 ## Controller Design & Simulation
 
+[Simulation](https://github.com/MECA482-ReactionWheel/InertiaWheel/blob/main/images/Meeting%20Controls%20-%2017%20December%202021%20(1).mp4)
+
 **Controller design documentation here**
 
 **Simulation documentation here**
