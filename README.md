@@ -144,6 +144,23 @@ In order to implement the equation of motion into CopelliaSIM, a controller arch
 
 The first controller used for simulation was a full-state feedback controller seen below in Figure 4.
 
+<p align="center">
+  <img width="650" alt="feedbackController" src="https://user-images.githubusercontent.com/90480302/146624082-fca687b2-3ede-4268-95b1-7834d677a035.PNG">
+</p>
+
+<p align="center">  
+  <b>Figure 4</b>: Feedback controller architecture for inertia wheel pendulum.
+</p>
+
+The step response associated for the controller in Figure 4 can be seen below.
+
+<p align="center">
+  <img width="650" alt="feedbackController" src="https://user-images.githubusercontent.com/90480302/146624082-fca687b2-3ede-4268-95b1-7834d677a035.PNG">
+</p>
+
+<p align="center">  
+  <b>Figure 4</b>: Feedback controller architecture for inertia wheel pendulum.
+</p>
 
 
 [Simulation](https://github.com/MECA482-ReactionWheel/InertiaWheel/blob/main/images/Meeting%20Controls%20-%2017%20December%202021%20(1).mp4)
