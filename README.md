@@ -155,12 +155,14 @@ The first controller used for simulation was a full-state feedback controller se
 The step response associated for the controller in Figure 4 can be seen below.
 
 <p align="center">
-  <img width="650" alt="feedbackController" src="https://user-images.githubusercontent.com/90480302/146624082-fca687b2-3ede-4268-95b1-7834d677a035.PNG">
+  <img width="500" alt="feedbackResp" src="https://user-images.githubusercontent.com/90480302/146624322-3bf3fadf-bec4-4709-8746-da94581e074e.PNG">
 </p>
 
 <p align="center">  
-  <b>Figure 4</b>: Feedback controller architecture for inertia wheel pendulum.
+  <b>Figure 5</b>: Step response of feedback controller.
 </p>
+
+A PID controller was also implemented and simulated. This controller tracks system error and regulates input accordingly 
 
 
 [Simulation](https://github.com/MECA482-ReactionWheel/InertiaWheel/blob/main/images/Meeting%20Controls%20-%2017%20December%202021%20(1).mp4)
