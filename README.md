@@ -312,7 +312,7 @@ w = 30;
 
 - [**Presentation Slides**](https://github.com/MECA482-ReactionWheel/InertiaWheel/blob/main/presentationSlides.pdf)
 - [**Presentation Video**](https://github.com/MECA482-ReactionWheel/InertiaWheel/blob/main/images/482presentaion%20.mp4)
-- [**GitHub .pdf version**](https://github.com/MECA482-ReactionWheel/InertiaWheel/blob/main/references/automatic%20control%20with%20experiments.pdf)
+- [**GitHub .pdf version**](https://github.com/MECA482-ReactionWheel/InertiaWheel/blob/main/GitHub.pdf)
 
 ## References
 
