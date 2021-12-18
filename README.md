@@ -306,6 +306,13 @@ w = 30;
 </p>
 </details>
 
+**Other simulation files can be found [here](https://github.com/MECA482-ReactionWheel/InertiaWheel/blob/c7c28044da1f7d4f982b1fe197ac5ab2bfbf470e/CoppeliaSim).**
+
+## Appendix B: Project Documents
+
+- Presentation Slides
+- Presentation Video
+- GitHub .pdf version
 
 ## References
 
