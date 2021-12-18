@@ -192,7 +192,7 @@ The inertia wheel pendulum was also modeled in CopelliaSIM. This model can be se
   <b>Figure 8</b>: CopelliaSIM model for inertia wheel pendulum.
 </p>
 
-A video of the actaul simulation can be seen [here](https://github.com/MECA482-ReactionWheel/InertiaWheel/blob/main/images/Meeting%20Controls%20-%2017%20December%202021%20(1).mp4).
+A video of the actual simulation can be seen [here](https://github.com/MECA482-ReactionWheel/InertiaWheel/blob/main/images/Meeting%20Controls%20-%2017%20December%202021%20(1).mp4).
 
 **Controller design documentation here**
 
