@@ -215,12 +215,10 @@ mbar = m1*lc+m2*l
 J1 = (1/3)*m1*l^2
 J2 = (1/2)*m2*r^2
 
-
 A = [0 1 0; mbar*g/(J2*(1-m1*lc^2+m2*l^2+J1+J2)) 0 0; -mbar*g/(J2*(1-m1*lc^2+m2*l^2+J1+J2)) 0 0]
 B = [0; 1/J2+(m1*lc^2+m2*l^2+J1+J2)/(J2*(1-m1*lc^2+m2*l^2+J1+J2)); -(m1*lc^2+m2*l^2+J1+J2)/(J2*(1-m1*lc^2+m2*l^2+J1+J2))] 
 C = [1 0 0];
 D = 0;
-
 
 check1 = A(2,1)
 check2 = A(3,1)
@@ -279,8 +277,8 @@ w = 30;
             [returnCode,encoder]=wheel.simxGetJointPosition(clientID,encoder1,wheel.simx_opmode_streaming);
 
 
-%            [returnCode,encoder]=wheel.simxGetIntegerParameter(clientID,encoder,wheel.simx_opmode_streaming);
-             %Execute This
+%           [returnCode,encoder]=wheel.simxGetIntegerParameter(clientID,encoder,wheel.simx_opmode_streaming);
+        %Execute This
         %Moves forward
                
         while (1)
