@@ -194,7 +194,119 @@ The inertia wheel pendulum was also modeled in CopelliaSIM. This model can be se
 
 A video of the actual simulation can be seen [here](https://github.com/MECA482-ReactionWheel/InertiaWheel/blob/main/images/Meeting%20Controls%20-%2017%20December%202021%20(1).mp4).
 
+
 ## Appendix A: Simulation Code
+
+<details open>
+<summary>MATLAB Full State Feedback</summary>
+<p>
+  
+```
+clc, clear all, close all;
+
+% Define system matrices
+g = 9.81
+r = 0.5
+m1 = 2
+m2 = 1
+l = 1
+lc = 0.25*l
+mbar = m1*lc+m2*l
+J1 = (1/3)*m1*l^2
+J2 = (1/2)*m2*r^2
+
+
+A = [0 1 0; mbar*g/(J2*(1-m1*lc^2+m2*l^2+J1+J2)) 0 0; -mbar*g/(J2*(1-m1*lc^2+m2*l^2+J1+J2)) 0 0]
+B = [0; 1/J2+(m1*lc^2+m2*l^2+J1+J2)/(J2*(1-m1*lc^2+m2*l^2+J1+J2)); -(m1*lc^2+m2*l^2+J1+J2)/(J2*(1-m1*lc^2+m2*l^2+J1+J2))] 
+C = [1 0 0];
+D = 0;
+
+
+check1 = A(2,1)
+check2 = A(3,1)
+check3 = B(2,1)
+check4 = B(3,1)
+% Create state space object
+sys = ss(A,B,C,D);
+
+% Check open-loop eigenvalues
+E = eig(A);
+
+% Desired closed-loop eigenvalues
+P = [0, -0.5, -1.5];
+
+% Solve for K using pole placement
+K = place(A,B,P);
+
+% Check for closed-loop eigenvalues
+Acl = A-B*K;
+Ecl = eig(Acl);
+detAcl = det(Acl)
+
+% Closed-loop system
+syscl = ss(Acl, B, C, D);
+
+Kr = 1/dcgain(syscl);
+syscl_scaled = ss(Acl, B*Kr, C, D);
+
+% Step response of the system
+%step(syscl);
+step(syscl_scaled);
+%step(sys)
+  
+```
+</p>
+</details>
+
+<details open>
+<summary>MATLAB API</summary>
+<p>
+  
+```
+wheel=remApi('remoteApi'); % using the prototype file (remoteApiProto.m)
+wheel.simxFinish(-1); % just in case, close all opened connections
+clientID=wheel.simxStart('127.0.0.1',19999,true,true,5000,5);
+
+w = 30;
+
+ if (clientID>-1)
+        disp('Connected to remote API server');
+            %output
+            [returnCode,motor_encoder]=wheel.simxGetObjectHandle(clientID,'motor_encoder',wheel.simx_opmode_blocking);
+            %input
+            [returnCode,encoder1]=wheel.simxGetObjectHandle(clientID,'encoder',wheel.simx_opmode_blocking);
+            
+            [returnCode,encoder]=wheel.simxGetJointPosition(clientID,encoder1,wheel.simx_opmode_streaming);
+
+
+%            [returnCode,encoder]=wheel.simxGetIntegerParameter(clientID,encoder,wheel.simx_opmode_streaming);
+             %Execute This
+        %Moves forward
+               
+        while (1)
+   [returnCode,encodernum]=wheel.simxGetJointPosition(clientID,encoder1,wheel.simx_opmode_buffer)
+
+  %[returnCode,encoder]=wheel.simxGetIntegerParameter(clientID,encoder,wheel.simx_opmode_buffer);
+
+ encoderout = (encodernum * (180 / 3.14))
+ 
+%          data = '{}\n'.format(encoderout)
+        
+[returnCode]=wheel.simxSetJointTargetVelocity(clientID, motor_encoder, w ,wheel.simx_opmode_blocking);
+             pause(0.5)
+
+        end
+
+        wheel.simxFinish(-1);
+
+ end
+
+ wheel.delete(); % call the destructor!
+```
+</p>
+</details>
+
+
 ## References
 
 
