@@ -324,5 +324,3 @@ w = 30;
 
 [5] O. D. Montoya and W. Gil-González, [“Nonlinear analysis and control of a reaction wheel pendulum: Lyapunov-based approach,”](https://github.com/MECA482-ReactionWheel/InertiaWheel/blob/main/references/automatic%20control%20with%20experiments.pdf) Engineering Science and Technology, 
 an International Journal, vol. 23, no. 1, pp. 21–29, 2020. 
-
-
