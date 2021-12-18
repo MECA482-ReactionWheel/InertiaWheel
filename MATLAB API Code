@@ -1,0 +1,52 @@
+wheel=remApi('remoteApi'); % using the prototype file (remoteApiProto.m)
+wheel.simxFinish(-1); % just in case, close all opened connections
+clientID=wheel.simxStart('127.0.0.1',19999,true,true,5000,5);
+
+
+
+
+
+w = 30;
+
+ if (clientID>-1)
+        disp('Connected to remote API server');
+            %output
+            [returnCode,motor_encoder]=wheel.simxGetObjectHandle(clientID,'motor_encoder',wheel.simx_opmode_blocking);
+            %input
+            [returnCode,encoder1]=wheel.simxGetObjectHandle(clientID,'encoder',wheel.simx_opmode_blocking);
+            
+            [returnCode,encoder]=wheel.simxGetJointPosition(clientID,encoder1,wheel.simx_opmode_streaming);
+
+
+%            [returnCode,encoder]=wheel.simxGetIntegerParameter(clientID,encoder,wheel.simx_opmode_streaming);
+             %Execute This
+        %Moves forward
+        
+
+        
+        while (1)
+   [returnCode,encodernum]=wheel.simxGetJointPosition(clientID,encoder1,wheel.simx_opmode_buffer)
+
+
+  %[returnCode,encoder]=wheel.simxGetIntegerParameter(clientID,encoder,wheel.simx_opmode_buffer);
+
+ encoderout = (encodernum * (180 / 3.14))
+ 
+%          data = '{}\n'.format(encoderout)
+        
+
+
+  
+[returnCode]=wheel.simxSetJointTargetVelocity(clientID, motor_encoder, w ,wheel.simx_opmode_blocking);
+             pause(0.5)
+
+        end
+        
+
+
+
+        wheel.simxFinish(-1);
+
+ end
+
+ wheel.delete(); % call the destructor!
